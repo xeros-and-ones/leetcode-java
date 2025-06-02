@@ -1,4 +1,4 @@
 package validAnagram;
 
-public class Main {
+public class Solution {
 }
