@@ -1,53 +1,38 @@
-name: Update README with new LeetCode problems
+name: Update README
 
 on:
   push:
-    branches: [master]
     paths:
-      - "src/**" # Trigger when files in src directory change
+      - 'src/**'
 
 jobs:
-  update-readme:
+  update:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0 # Needed for git diff
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
 
-      - name: Set up Java
-        uses: actions/setup-java@v3
-        with:
-          java-version: "17"
-          distribution: "temurin"
+    - name: Debug files
+      run: |
+        echo "Repository contents:"
+        ls -R
+        echo "Solutions directories:"
+        find src/ -type d
 
-      - name: Find new problem directories
-        id: find-problems
-        run: |
-          # Get list of changed directories in src/
-          DIRS=$(git diff --name-only --diff-filter=AD origin/master | grep -E '^src/[^/]+/' | cut -d/ -f1-2 | sort | uniq)
-          echo "dirs=$DIRS" >> $GITHUB_OUTPUT
+    - name: Update README
+      run: |
+        python3 .github/scripts/update_readme.py
+        echo "README diff:"
+        git diff README.md
 
-
-      - name: Run Python Script & update README
-        if: steps.find-problems.outputs.dirs != ''
-        run: |
-          # Install required Python packages
-          python -m pip install --upgrade pip
-          pip install pyyaml
-
-          # Run script to update README
-          python .github/scripts/update_readme.py
-
-
-      - name: Commit Changes
-        if: success()
-        run: |
-          # Commit changes if README was modified
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-
-          git diff --quiet && exit 0 || {
-            git add README.md
-            git commit -m "docs: Update README with new problems"
-            git push
-          }
+    - name: Commit changes
+      if: success()
+      run: |
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+        git add README.md
+        git diff --quiet && exit 0 || {
+          git commit -m "Auto-update README"
+          git push
+        }
