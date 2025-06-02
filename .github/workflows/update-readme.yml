@@ -6,7 +6,7 @@ on:
       - "src/**"
 
 permissions:
-  contents: write # This allows the workflow to push changes
+  contents: write
 
 jobs:
   update:
@@ -16,12 +16,10 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Debug files
-        run: |
-          echo "Repository contents:"
-          ls -R
-          echo "Solutions directories:"
-          find src/ -type d
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
 
       - name: Update README
         run: |
@@ -29,13 +27,12 @@ jobs:
           echo "README diff:"
           git diff README.md
 
-      - name: Commit changes
-        if: success()
+      - name: Commit and push changes
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          git add README.md
-          git diff --quiet && exit 0 || {
+          git diff --quiet README.md || {
+            git add README.md
             git commit -m "Auto-update README"
             git push
           }
