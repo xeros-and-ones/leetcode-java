@@ -1,4 +1,4 @@
-package main.java.io.github.xerosandones.leetcode.valid_anagram;
+package valid_anagram;
 
 import java.util.Arrays;
 import java.util.HashMap;

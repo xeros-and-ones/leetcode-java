@@ -1,4 +1,4 @@
-package main.java.io.github.xerosandones.leetcode.two_sum;
+package two_sum;
 
 import java.util.HashMap;
 
