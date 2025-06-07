@@ -1,4 +1,4 @@
-package containsDuplicates;
+package main.java.io.github.xerosandones.leetcode.contains_duplicates;
 import java.util.HashSet;
 
 public class Solution {

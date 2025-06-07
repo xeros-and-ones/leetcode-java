@@ -1,4 +1,4 @@
-package removeDuplicatesFromSortedArray;
+package main.java.io.github.xerosandones.leetcode.remove_duplicates_sorted_array;
 
 public class Solution {
     /// Given an integer array nums sorted in non-decreasing order,

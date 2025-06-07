@@ -8,5 +8,5 @@ Last updated: 2025-06-07 02:43:10
 |---------|----------|
 | Containsduplicates | [View Solution](src/containsDuplicates) |
 | Removeduplicatesfromsortedarray | [View Solution](src/removeDuplicatesFromSortedArray) |
-| Twosum | [View Solution](src/twoSum) |
-| Validanagram | [View Solution](src/validAnagram) |
+| Twosum | [View Solution](src/two_sum) |
+| Validanagram | [View Solution](src/valid_anagram) |
