@@ -4,7 +4,7 @@ from datetime import datetime
 
 def get_problem_directories():
     """Scan the src directory for problem folders"""
-    base_dir = "src"
+    base_dir = "src/main/java/io/github/xerosandones/leetcode"
     problems = []
 
     if os.path.exists(base_dir):
@@ -26,7 +26,7 @@ def update_readme(problems):
         f.write("|---------|----------|\n")
 
         for problem in problems:
-            problem_name = problem["name"].replace("-", " ").title()
+            problem_name = problem["name"].replace("_", " ").title()
             solution_path = problem["path"]
             f.write(f"| {problem_name} | [View Solution]({solution_path}) |\n")
 
