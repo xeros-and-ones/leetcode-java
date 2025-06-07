@@ -4,7 +4,7 @@ from datetime import datetime
 
 def get_problem_directories():
     """Scan the src directory for problem folders"""
-    base_dir = "src/main/java/io/github/xerosandones/leetcode"
+    base_dir = "src"
     problems = []
 
     if os.path.exists(base_dir):
