@@ -1,6 +1,6 @@
 # LeetCode Java Solutions
 
-Last updated: 2025-06-09 00:03:56
+Last updated: 2025-06-09 05:59:39
 
 ## Problems Solved
 
@@ -14,3 +14,4 @@ Last updated: 2025-06-09 00:03:56
 | Shuffle The Array | [View Solution](src/shuffle_the_array) |
 | Two Sum | [View Solution](src/two_sum) |
 | Valid Anagram | [View Solution](src/valid_anagram) |
+| Valid Parentheses | [View Solution](src/valid_parentheses) |
