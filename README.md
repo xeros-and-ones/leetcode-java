@@ -1,11 +1,12 @@
 # LeetCode Java Solutions
 
-Last updated: 2025-06-09 05:59:39
+Last updated: 2025-06-09 07:15:49
 
 ## Problems Solved
 
 | Problem | Solution |
 |---------|----------|
+| Baseball Game | [View Solution](src/baseball_game) |
 | Concatenation Of Array | [View Solution](src/concatenation_of_array) |
 | Contains Duplicates | [View Solution](src/contains_duplicates) |
 | Min Stack | [View Solution](src/min_stack) |
