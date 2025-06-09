@@ -1,6 +1,6 @@
 # LeetCode Java Solutions
 
-Last updated: 2025-06-08 04:03:32
+Last updated: 2025-06-09 00:03:56
 
 ## Problems Solved
 
@@ -8,6 +8,7 @@ Last updated: 2025-06-08 04:03:32
 |---------|----------|
 | Concatenation Of Array | [View Solution](src/concatenation_of_array) |
 | Contains Duplicates | [View Solution](src/contains_duplicates) |
+| Min Stack | [View Solution](src/min_stack) |
 | Remove Duplicates Sorted Array | [View Solution](src/remove_duplicates_sorted_array) |
 | Remove Element | [View Solution](src/remove_element) |
 | Shuffle The Array | [View Solution](src/shuffle_the_array) |
