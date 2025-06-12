@@ -1,22 +1,22 @@
 # LeetCode Java Solutions
 
-Last updated: 2025-06-12 10:12:54
+Last updated: 2025-06-12 13:54:13
 
 ## Problems Solved
 
 | Problem | Solution |
 |---------|----------|
-| Baseball Game | [View Solution](./baseball_game) |
-| Concatenation Of Array | [View Solution](./concatenation_of_array) |
-| Contains Duplicates | [View Solution](./contains_duplicates) |
-| Design Linked List | [View Solution](./design_linked_list) |
-| Merge K Sorted Lists | [View Solution](./merge_k_sorted_lists) |
-| Merge Two Sorted Lists | [View Solution](./merge_two_sorted_lists) |
-| Min Stack | [View Solution](./min_stack) |
-| Remove Duplicates Sorted Array | [View Solution](./remove_duplicates_sorted_array) |
-| Remove Element | [View Solution](./remove_element) |
-| Reverse Linked List | [View Solution](./reverse_linked_list) |
-| Shuffle The Array | [View Solution](./shuffle_the_array) |
-| Two Sum | [View Solution](./two_sum) |
-| Valid Anagram | [View Solution](./valid_anagram) |
-| Valid Parentheses | [View Solution](./valid_parentheses) |
+| Baseball Game | [View Solution](src/baseball_game) |
+| Concatenation Of Array | [View Solution](src/concatenation_of_array) |
+| Contains Duplicates | [View Solution](src/contains_duplicates) |
+| Design Linked List | [View Solution](src/design_linked_list) |
+| Merge K Sorted Lists | [View Solution](src/merge_k_sorted_lists) |
+| Merge Two Sorted Lists | [View Solution](src/merge_two_sorted_lists) |
+| Min Stack | [View Solution](src/min_stack) |
+| Remove Duplicates Sorted Array | [View Solution](src/remove_duplicates_sorted_array) |
+| Remove Element | [View Solution](src/remove_element) |
+| Reverse Linked List | [View Solution](src/reverse_linked_list) |
+| Shuffle The Array | [View Solution](src/shuffle_the_array) |
+| Two Sum | [View Solution](src/two_sum) |
+| Valid Anagram | [View Solution](src/valid_anagram) |
+| Valid Parentheses | [View Solution](src/valid_parentheses) |
