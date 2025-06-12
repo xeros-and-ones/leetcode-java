@@ -4,12 +4,15 @@ from datetime import datetime
 
 def get_problem_directories():
     """Scan the src directory for problem folders"""
-    base_dir = "src"
+    base_dir = "./"
     problems = []
 
     if os.path.exists(base_dir):
         for dir_name in sorted(os.listdir(base_dir)):
             dir_path = os.path.join(base_dir, dir_name)
+            # Skip hidden directories (those starting with '.')
+            if dir_name.startswith("."):
+                continue
             if os.path.isdir(dir_path):
                 problems.append({"name": dir_name, "path": dir_path})
     return problems
