@@ -18,16 +18,13 @@ public class Solution {
     public static int[] getConcatenation(int[] nums, int times) {
         int[] ans = new int[nums.length * times];
 
-        for (int j = 1; j < times; j++) {
-            for (int i = 0; i < nums.length; i++) {
-                ans[i] = nums[i];
-                ans[i + (j * nums.length)] = nums[i];
-            }
+        for (int i = 0; i < ans.length; i++) {
+            ans[i] = nums[i % nums.length];
         }
         return ans;
     }
 
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(getConcatenation(new int[]{1, 2, 1}, 4)));
+        System.out.println(Arrays.toString(getConcatenation(new int[]{1, 2, 3}, 4)));
     }
 }
